@@ -12,6 +12,7 @@ export default function Body() {
           <Card />
           <Card />
         </Section>
+        <Card />
       </Post>
     </div>
   )
