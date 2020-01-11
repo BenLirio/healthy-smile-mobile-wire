@@ -2,8 +2,4 @@
 .Body {
   background: $light;
   min-height: calc(110vh - #{$Header-height});
-  display: grid;
-  gap: 10px;
-  align-content: flex-start;
-  margin: 0 10px;
 }

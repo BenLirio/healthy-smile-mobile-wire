@@ -2,4 +2,7 @@
 .Section {
   background: rgba($primary, 0.25);
   min-height: 100px;
+  display: grid;
+  padding-top: $_1;
+  margin-bottom: $_1;
 }
