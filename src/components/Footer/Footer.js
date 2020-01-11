@@ -2,5 +2,5 @@ import React from 'react'
 import classes from './Footer.module.css'
 
 export default function Footer() {
-  return <div></div>
+  return <div className={classes.Footer}></div>
 }
