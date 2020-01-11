@@ -10,6 +10,10 @@ export default function Body() {
         <Card />
         <Card />
       </Section>
+      <Section>
+        <Card />
+        <Card />
+      </Section>
     </div>
   )
 }
