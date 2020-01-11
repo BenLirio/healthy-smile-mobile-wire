@@ -1,4 +1,5 @@
+@import '../../variables.scss';
 .Header {
-  background: #1c1e40;
-  height: 220px;
+  background: $secondary;
+  height: $header-height;
 }

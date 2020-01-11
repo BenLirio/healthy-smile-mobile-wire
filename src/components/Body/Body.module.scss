@@ -1,3 +1,5 @@
+@import '../../variables.scss';
 .Body {
-  background: #79baf2;
+  background: $light;
+  min-height: calc(110vh - #{$header-height});
 }

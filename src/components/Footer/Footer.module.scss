@@ -1,4 +1,5 @@
+@import '../../variables.scss';
 .Footer {
-  background: #424d8c;
-  height: 100px;
+  background: $dark;
+  height: $footer-height;
 }
