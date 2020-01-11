@@ -61,6 +61,7 @@ const styles = {
     fontWeight: '500',
     textTransform: 'uppercase',
     lineHeight: '0.875rem',
+    color: '#d94032',
   },
   caption: {
     fontSize: '0.75rem',
@@ -69,9 +70,13 @@ const styles = {
   },
 }
 export default function FontFace(props) {
-  return (
-    <p style={props.type ? styles[props.type] : styles.body1}>
-      {props.children}
-    </p>
-  )
+  const style = props.type ? styles[props.type] : styles.body1
+  if (props.color) {
+    if (props.color === 'light') {
+      style.color = '#EEE'
+    } else {
+      style.color = props.color
+    }
+  }
+  return <p style={style}>{props.children}</p>
 }

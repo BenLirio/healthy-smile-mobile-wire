@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+.Cta {
+  background: $secondary;
+  margin: 0 $_1 $_1;
+  border-radius: $_05;
+  padding-top: $_1;
+}
+.Title {
+  margin-left: $_05;
+  margin-bottom: $_05;
+}
+.Text {
+  margin: 0 $_1 $_2;
+}
+.Buttons {
+  display: flex;
+  flex-direction: row;
+}
+.Button {
+  text-align: center;
+  flex: 1 1 auto;
+  margin-bottom: $_1;
+}

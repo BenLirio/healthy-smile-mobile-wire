@@ -4,12 +4,13 @@ import Card from '../../components/Card/Card'
 import Section from '../../components/Section/Section'
 import Post from '../../components/Post/Post'
 import Text from '../../components/Text/Text'
+import Cta from '../../components/Cta/Cta'
 
 export default function Body() {
   return (
     <div className={classes.Body}>
       <Post>
-        <Text type='caption'>asdfsda</Text>
+        <Cta></Cta>
         <Section>
           <Card />
           <Card />
