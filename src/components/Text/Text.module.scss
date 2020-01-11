@@ -1,5 +1,5 @@
 @import '../../variables.scss';
 .Text {
-  background: $secondary;
-  margin-bottom: $_1;
+  background: rgba($secondary, 0.25);
+  margin: 0 $_1 $_1;
 }
