@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './Body.module.scss'
-import Cta from '../../components/Cta/Cta'
+import Card from '../../components/Card/Card'
 export default function Body() {
   return (
     <div className={classes.Body}>
-      <Cta />
+      <Card />
     </div>
   )
 }

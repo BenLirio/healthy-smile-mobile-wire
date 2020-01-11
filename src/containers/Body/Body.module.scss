@@ -2,4 +2,5 @@
 .Body {
   background: $light;
   min-height: calc(110vh - #{$Header-height});
+  padding: $_1;
 }
