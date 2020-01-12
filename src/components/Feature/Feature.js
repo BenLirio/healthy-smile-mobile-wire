@@ -6,9 +6,7 @@ export default function Feature() {
     <div className={classes.Feature}>
       <div className={classes.Icon}></div>
       <div className={classes.Text}>
-        <Text type='headline4' color='light'>
-          Title
-        </Text>
+        <Text type='headline4'>Title</Text>
       </div>
       <div style={{ flex: '1 1 auto' }}></div>
       <div className={classes.Button}>

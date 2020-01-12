@@ -9,6 +9,7 @@ import ReviewHolder from '../../components/ReviewHolder/ReviewHolder'
 import Review from '../../components/Review/Review'
 import About from '../../components/About/About'
 import ImageGroup from '../../components/ImageGroup/ImageGroup'
+import Map from '../../components/Map/Map'
 
 export default function Body() {
   return (
@@ -29,7 +30,7 @@ export default function Body() {
           <ImageGroup />
         </Section>
         <Cta></Cta>
-        <Card />
+        <Map />
       </Post>
     </div>
   )
