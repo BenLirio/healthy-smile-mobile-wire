@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+.Feature {
+  min-height: 100px;
+  background: $secondary;
+  margin: 0 $_1 $_1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.Text {
+  margin-left: $_1;
+}
+.Icon {
+  margin-left: $_1;
+  width: $_3;
+  height: $_3;
+  background: $dark;
+}
+.Button {
+  margin-right: $_1;
+}
