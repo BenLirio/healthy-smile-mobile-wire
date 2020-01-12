@@ -30,7 +30,6 @@ export default function Body() {
         </Section>
         <Cta></Cta>
         <Card />
-        <Card />
       </Post>
     </div>
   )
