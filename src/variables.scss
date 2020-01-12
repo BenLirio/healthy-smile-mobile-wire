@@ -1,33 +1,37 @@
-$primary: #d94032;
-$secondary: #424d8c;
-$light: #79baf2;
-$dark: #1c1e40;
+/*********************
+VARIABLES
+*********************/
 
-$_1: 16px;
-$_05: calc(#{$_1} / 2);
-$_2: calc(#{$_1} * 2);
-$_3: calc(#{$_1} * 4);
-$_4: calc(#{$_1} * 6);
-$_5: calc(#{$_1} * 5);
-$_6: calc(#{$_1} * 6);
-$_7: calc(#{$_1} * 7);
-$_8: calc(#{$_1} * 8);
-$_9: calc(#{$_1} * 9);
-$_10: calc(#{$_1} * 10);
-$_11: calc(#{$_1} * 11);
-$_12: calc(#{$_1} * 12);
-$_13: calc(#{$_1} * 13);
-$_14: calc(#{$_1} * 14);
-$_15: calc(#{$_1} * 15);
-$_16: calc(#{$_1} * 16);
-$_17: calc(#{$_1} * 17);
-$_18: calc(#{$_1} * 18);
-$_19: calc(#{$_1} * 19);
-$_20: calc(#{$_1} * 20);
-$_21: calc(#{$_1} * 21);
+$primary: #0275d8;
+$success: #5cb85c;
+$info: #5bc0de;
+$warning: #f0ad4e;
+$danger: #d9534f;
+$dark: #292b2c;
+$light: #f7f7f7;
 
-$Header-height: 220px;
+/*********************
+BREAKPOINTS
+*********************/
 
-$Footer-height: 200px;
-
-$TopBar-height: 50px;
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}

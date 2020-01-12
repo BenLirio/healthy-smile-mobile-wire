@@ -1,0 +1,9 @@
+@import '../../../variables.scss';
+.FeatureImageContainer {
+  width: 100%;
+  height: 250px;
+  background: $primary;
+  @include breakpoint(sm) {
+    height: 400px;
+  }
+}
