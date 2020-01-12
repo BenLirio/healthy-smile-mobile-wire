@@ -1,9 +1,10 @@
 import React from 'react'
 
 export default function TopNav() {
-  return (
-    <div>
-      <div>Top nav</div>
-    </div>
-  )
+  const style = {
+    width: '100%',
+    height: '50px',
+    background: 'blue',
+  }
+  return <div style={style}></div>
 }
