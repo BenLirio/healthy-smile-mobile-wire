@@ -7,6 +7,8 @@ import Cta from '../../components/Cta/Cta'
 import Feature from '../../components/Feature/Feature'
 import ReviewHolder from '../../components/ReviewHolder/ReviewHolder'
 import Review from '../../components/Review/Review'
+import About from '../../components/About/About'
+import ImageGroup from '../../components/ImageGroup/ImageGroup'
 
 export default function Body() {
   return (
@@ -22,9 +24,12 @@ export default function Body() {
           <Review />
           <Review />
         </ReviewHolder>
+        <Section>
+          <About />
+          <ImageGroup />
+        </Section>
         <Cta></Cta>
         <Card />
-        <Section></Section>
         <Card />
       </Post>
     </div>
