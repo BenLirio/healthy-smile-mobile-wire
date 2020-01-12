@@ -7,6 +7,7 @@ import Cta from '../../components/Cta/Cta'
 import Feature from '../../components/Feature/Feature'
 import ReviewHolder from '../../components/ReviewHolder/ReviewHolder'
 import Review from '../../components/Review/Review'
+import Map from '../../components/Map/Map'
 
 export default function Body() {
   return (
@@ -23,9 +24,7 @@ export default function Body() {
           <Review />
         </ReviewHolder>
         <Cta></Cta>
-        <Card />
-        <Section></Section>
-        <Card />
+        <Map />
       </Post>
     </div>
   )

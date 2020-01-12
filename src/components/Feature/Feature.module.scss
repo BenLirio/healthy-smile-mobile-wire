@@ -1,8 +1,8 @@
 @import '../../variables.scss';
 .Feature {
   min-height: 100px;
-  background: $secondary;
-  margin: 0 $_1 $_1;
+  margin: 0 0 0;
+  border-bottom: 1px solid #000;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -14,7 +14,7 @@
   margin-left: $_1;
   width: $_3;
   height: $_3;
-  background: $dark;
+  background: $light;
 }
 .Button {
   margin-right: $_1;
