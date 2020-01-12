@@ -1,5 +1,65 @@
 @import '../../variables.scss';
 .Footer {
   background: $dark;
-  height: $Footer-height;
+  padding-top: $_1;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: $_05;
+
+  text-align: left;
+}
+.Title {
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 3;
+}
+.Mon {
+  text-align: right;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.MonT {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.Tue {
+  text-align: right;
+  grid-area: 3 / 1 / 4 / 2;
+}
+.TueT {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.Wed {
+  text-align: right;
+  grid-area: 4 / 1 / 5 / 2;
+}
+.WedT {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.Trs {
+  text-align: right;
+  grid-area: 5 / 1 / 6 / 2;
+}
+.TrsT {
+  grid-area: 5 / 2 / 6 / 3;
+}
+.Fri {
+  text-align: right;
+  grid-area: 6 / 1 / 7 / 2;
+}
+.FriT {
+  grid-area: 6 / 2 / 7 / 3;
+}
+.Sat {
+  text-align: right;
+  grid-area: 7 / 1 / 8 / 2;
+}
+.SatT {
+  grid-area: 7 / 2 / 8 / 3;
+}
+.Sun {
+  text-align: right;
+  grid-area: 8 / 1 / 9 / 2;
+}
+.SunT {
+  grid-area: 8 / 2 / 9 / 3;
 }
