@@ -12,16 +12,16 @@ export default function Body() {
   return (
     <div className={classes.Body}>
       <Post>
-        <ReviewHolder>
-          <Review />
-          <Review />
-          <Review />
-        </ReviewHolder>
         <Section>
           <Feature />
           <Feature />
           <Feature />
         </Section>
+        <ReviewHolder>
+          <Review />
+          <Review />
+          <Review />
+        </ReviewHolder>
         <Cta></Cta>
         <Card />
         <Section></Section>
