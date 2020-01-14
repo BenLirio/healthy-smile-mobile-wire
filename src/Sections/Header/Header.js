@@ -6,7 +6,7 @@ import FeatureImage from '../../components/Image/FeatureImage/FeatureImage'
 import SideDrawer from '../../components/SideDrawer/SideDrawer'
 import BackDrop from '../../components/Backdrop/Backdrop'
 export const Header = () => {
-  const [sideDrawerOpen, setSideDrawerOpen] = useState(true)
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
   const openSidebar = () => {
     setSideDrawerOpen(true)
   }
@@ -18,11 +18,6 @@ export const Header = () => {
       <TopNav click={openSidebar} />
       <BackDrop click={closeSidebar} open={sideDrawerOpen} />
       <SideDrawer open={sideDrawerOpen} click={closeSidebar} />
-      <Switch>
-        <Route exact path='/'>
-          <FeatureImage></FeatureImage>
-        </Route>
-      </Switch>
     </Aux>
   )
 }

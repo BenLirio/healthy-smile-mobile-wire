@@ -33,6 +33,10 @@ p.btn-text {
   text-transform: uppercase;
   color: $primary;
 }
+button {
+  background: none;
+  border: none;
+}
 
 /*********************
 LAYOUT
@@ -42,6 +46,7 @@ LAYOUT
 .main-layout {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: minmax(100vh, auto) minmax(200px, auto);
   grid-template-areas:
     'body'
     'footer';
@@ -58,10 +63,10 @@ LAYOUT
 /** SM **/
 @include breakpoint(sm) {
   .main-layout {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 768px 1fr;
     grid-template-areas:
-      'body body body'
-      'footer footer footer';
+      '. body .'
+      '. footer .';
   }
 }
 /** MD **/

@@ -4,7 +4,9 @@ import { Header, Body, Footer } from './Sections/index'
 export default () => (
   <Router>
     <Header />
-    <Body />
-    <Footer />
+    <div className='main-layout'>
+      <Body />
+      <Footer />
+    </div>
   </Router>
 )
