@@ -33,3 +33,49 @@ p.btn-text {
   text-transform: uppercase;
   color: $primary;
 }
+
+/*********************
+LAYOUT
+*********************/
+
+/** BASE **/
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'body'
+    'footer';
+}
+/** XS **/
+@include breakpoint(xs) {
+  .main-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'body'
+      'footer';
+  }
+}
+/** SM **/
+@include breakpoint(sm) {
+  .main-layout {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'body body body'
+      'footer footer footer';
+  }
+}
+/** MD **/
+@include breakpoint(md) {
+  .main-layout {
+  }
+}
+/** LG **/
+@include breakpoint(lg) {
+  .main-layout {
+  }
+}
+/** XL **/
+@include breakpoint(xl) {
+  .main-layout {
+  }
+}
