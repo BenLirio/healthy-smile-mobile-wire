@@ -10,3 +10,18 @@
 .Link {
   text-decoration: none;
 }
+.Mobile {
+  display: none;
+  margin-left: 50px;
+}
+@include breakpoint(xs) {
+  .Mobile {
+    display: block;
+  }
+  .Link {
+    display: none;
+  }
+  .TopNav {
+    justify-content: flex-start;
+  }
+}

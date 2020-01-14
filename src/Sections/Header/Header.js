@@ -15,9 +15,9 @@ export const Header = () => {
   }
   return (
     <Aux>
-      <TopNav />
-      <BackDrop click={closeSidebar} />
-      <SideDrawer open={sideDrawerOpen} />
+      <TopNav click={openSidebar} />
+      <BackDrop click={closeSidebar} open={sideDrawerOpen} />
+      <SideDrawer open={sideDrawerOpen} click={closeSidebar} />
       <Switch>
         <Route exact path='/'>
           <FeatureImage></FeatureImage>
