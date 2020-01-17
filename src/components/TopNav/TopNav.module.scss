@@ -1,5 +1,6 @@
 @import '../../variables.scss';
 .TopNav {
+  position: fixed;
   width: 100%;
   height: 50px;
   background: $light;
@@ -8,20 +9,16 @@
   align-items: center;
 }
 .Link {
-  text-decoration: none;
+  display: block;
 }
-.Mobile {
+.Button {
   display: none;
-  margin-left: 50px;
 }
 @include breakpoint(xs) {
-  .Mobile {
+  .Button {
     display: block;
   }
   .Link {
     display: none;
-  }
-  .TopNav {
-    justify-content: flex-start;
   }
 }

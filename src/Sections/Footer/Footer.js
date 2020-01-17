@@ -1,9 +1,6 @@
 import React from 'react'
+import classes from './Footer.module.scss'
 
 export const Footer = () => {
-  return (
-    <div
-      style={{ width: '100%', height: '200px', background: '#333940' }}
-    ></div>
-  )
+  return <div className={classes.Footer}></div>
 }

@@ -1,6 +1,5 @@
 @import '../../variables.scss';
-.Card {
+.Body {
   background: $secondary;
-  min-height: 50px;
-  margin: 0 $_1 $_1;
+  flex-grow: 1;
 }

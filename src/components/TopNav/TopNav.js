@@ -1,19 +1,19 @@
 import React from 'react'
 import classes from './TopNav.module.scss'
 import { Link } from 'react-router-dom'
-import Typography from '../Typography/Typography'
 
-export default function TopNav({ click }) {
+export default function TopNav({ onClick }) {
+  console.log('onClick', onClick)
   return (
     <div className={classes.TopNav}>
-      <button onClick={click} className={classes.Mobile}>
-        <Typography className='btn-text'>Drawer</Typography>
+      <button className={classes.Button} onClick={onClick}>
+        Drawer
       </button>
-      <Link className={classes.Link} to='/'>
-        <Typography className='btn-text'>Home</Typography>
+      <Link className={classes.Link} to="/">
+        Home
       </Link>
-      <Link className={classes.Link} to='/about'>
-        <Typography className='btn-text'>About</Typography>
+      <Link className={classes.Link} to="/about">
+        About
       </Link>
     </div>
   )

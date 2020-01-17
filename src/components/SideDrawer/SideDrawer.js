@@ -1,16 +1,15 @@
 import React from 'react'
 import classes from './SideDrawer.module.scss'
-import Typography from '../Typography/Typography'
 import { Link } from 'react-router-dom'
-export default function SideDrawer({ open, click }) {
+export default function SideDrawer({ open, onClick }) {
   const classNames = ['SideDrawer', open ? 'Open' : 'Closed']
   return (
     <div className={classNames.map(name => classes[name]).join(' ')}>
-      <Link onClick={click} className={classes.Link} to='/'>
-        <Typography className='btn-text'>Home</Typography>
+      <Link onClick={onClick} to="/">
+        Home
       </Link>
-      <Link onClick={click} className={classes.Link} to='/about'>
-        <Typography className='btn-text'>About</Typography>
+      <Link onClick={onClick} to="/about">
+        About
       </Link>
     </div>
   )
