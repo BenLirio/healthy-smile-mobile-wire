@@ -4,16 +4,6 @@ import Rating from '../Rating/Rating'
 import classes from './RateABiz.module.scss'
 import data from './data'
 
-const params = [
-  'authorLastName',
-  'createdDate',
-  'authorFirstName',
-  'rating',
-  'id',
-  'text',
-  'title',
-]
-
 export const RateABiz = () => {
   const [ratings, setRatings] = useState([])
   // useEffect(() => {
