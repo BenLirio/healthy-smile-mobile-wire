@@ -15,7 +15,21 @@ const params = [
 
 export const RateABiz = () => {
   const [ratings, setRatings] = useState([])
-  useEffect(() => {}, [])
+  useEffect(() => {
+    setFetching(true)
+    console.log('loaded...')
+    fetch(
+      'https://s3.amazonaws.com/cdn.rateabiz.com/reviews/ce34016f3fd1daf75a0daca4eb322873/reviews.json'
+    )
+      .then(res => res.json())
+      .then(res => {
+        console.log('res', res)
+        setStats(res.stats)
+        setReviews(res.reviews)
+        setFetching(false)
+      })
+      .catch(console.error)
+  }, [])
   return (
     <>
       <h1>RateABiz</h1>
