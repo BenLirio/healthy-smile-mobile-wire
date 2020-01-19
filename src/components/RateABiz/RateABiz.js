@@ -57,14 +57,12 @@ export const RateABiz = () => {
     setRatings(reviews)
   }, [])
   return (
-    <>
+    <div className={classes.Container}>
       <h1>RateABiz</h1>
-      <div className={classes.Container}>
-        {ratings.map(({ id, ...data }) => (
-          <Rating key={id} {...data}></Rating>
-        ))}
-      </div>
-    </>
+      {ratings.map(({ id, ...data }) => (
+        <Rating key={id} {...data}></Rating>
+      ))}
+    </div>
   )
 }
 RateABiz.propTypes = {}

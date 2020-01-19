@@ -1,0 +1,16 @@
+$mda: url('/mda-words.png');
+$ada: url('/ada-words.png');
+.Grid {
+  display: grid;
+  height: 400px;
+}
+.Ada {
+  background: $ada;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Mda {
+  background: $mda;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

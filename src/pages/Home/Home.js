@@ -6,6 +6,7 @@ import Feature from '../../components/Feature/Feature'
 import AboutImageList from '../../components/AboutImageList/AboutImageList'
 import Cta from '../../components/Cta/Cta'
 import RateABiz from '../../components/RateABiz/RateABiz'
+import Associations from '../../components/Associations/Associations'
 
 const Blank = () => (
   <div
@@ -56,7 +57,10 @@ export const Home = () => (
         </Col>
       </Row>
       <Row>
-        <Col xs={{ span: 4, offset: 8 }}>
+        <Col xs={8}>
+          <Associations />
+        </Col>
+        <Col xs={4}>
           <RateABiz />
         </Col>
       </Row>
