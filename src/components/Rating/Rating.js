@@ -11,14 +11,14 @@ import classes from './Rating.module.scss'
 // 'title',
 
 export const Rating = ({ title, text, name, rating }) => (
-  <div>
-    <h3 className={classes.Star}>{rating >= 1 ? '★' : '☆'}</h3>
-    <h3 className={classes.Star}>{rating >= 2 ? '★' : '☆'}</h3>
-    <h3 className={classes.Star}>{rating >= 3 ? '★' : '☆'}</h3>
-    <h3 className={classes.Star}>{rating >= 4 ? '★' : '☆'}</h3>
-    <h3 className={classes.Star}>{rating >= 5 ? '★' : '☆'}</h3>
-    <h1>{name}</h1>
-    <h2>{title}</h2>
+  <div className={classes.Rating}>
+    <h2>{name}</h2>
+    <h5 className={classes.Star}>{rating >= 1 ? '★' : '☆'}</h5>
+    <h5 className={classes.Star}>{rating >= 2 ? '★' : '☆'}</h5>
+    <h5 className={classes.Star}>{rating >= 3 ? '★' : '☆'}</h5>
+    <h5 className={classes.Star}>{rating >= 4 ? '★' : '☆'}</h5>
+    <h5 className={classes.Star}>{rating >= 5 ? '★' : '☆'}</h5>
+    <h3>{title}</h3>
     <p>{text}</p>
     <p>test</p>
   </div>

@@ -1,4 +1,10 @@
+@import '../../variables.scss';
 .Container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  background: $dark;
+  padding: 2rem;
+  overflow-y: scroll;
+  height: 300px;
 }

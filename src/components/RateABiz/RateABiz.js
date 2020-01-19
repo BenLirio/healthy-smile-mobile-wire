@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Rating from '../Rating/Rating'
 import classes from './RateABiz.module.scss'
@@ -14,22 +14,8 @@ const params = [
 ]
 
 export const RateABiz = () => {
-  const [ratings, setRatings] = useState([
-    {
-      id: 1,
-      title: 'Trees everywhere',
-      text: 'Lorem ipsum dolor sit.',
-      name: 'Ben Bingo',
-      rating: 4,
-    },
-    {
-      id: 2,
-      title: 'The Toast',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      name: 'Darius',
-      rating: 5,
-    },
-  ])
+  const [ratings, setRatings] = useState([])
+  useEffect(() => {}, [])
   return (
     <>
       <h1>RateABiz</h1>
