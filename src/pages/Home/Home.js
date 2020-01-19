@@ -56,7 +56,7 @@ export const Home = () => (
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col xs={{ span: 5, offset: 7 }}>
           <RateABiz />
         </Col>
       </Row>
