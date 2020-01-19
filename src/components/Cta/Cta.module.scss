@@ -1,5 +1,15 @@
 @import '../../variables.scss';
-.Cta {
-  background: $primary;
-  grid-area: cta;
+.Card {
+  background: $light;
+  height: 200px;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 2px 0 $dark;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 2rem 0;
+}
+.Button {
+  margin-right: 2rem;
 }

@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import FeatureImage from '../../components/FeatureImage/FeatureImage'
 import Feature from '../../components/Feature/Feature'
 import AboutImageList from '../../components/AboutImageList/AboutImageList'
+import Cta from '../../components/Cta/Cta'
 
 const Blank = () => (
   <div
@@ -68,7 +69,7 @@ export const Home = () => (
       </Row>
       <Row>
         <Col>
-          <Blank2 />
+          <Cta />
         </Col>
       </Row>
       <Row>
