@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+.Maps {
+  background: $primary;
+  grid-area: maps;
+}
+@include breakpoint(sm) {
+  .Maps {
+    display: none;
+  }
+}

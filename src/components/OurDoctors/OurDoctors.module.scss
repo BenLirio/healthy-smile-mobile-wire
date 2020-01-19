@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+.OurDoctors {
+  background: $primary;
+  grid-area: our-doctors;
+  display: none;
+}
+@include breakpoint(sm) {
+  .OurDoctors {
+    display: block;
+  }
+}

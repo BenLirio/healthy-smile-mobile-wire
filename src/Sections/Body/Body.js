@@ -5,10 +5,10 @@ import { Home, About } from '../../pages/index'
 export const Body = () => (
   <div className={classes.Body}>
     <Switch>
-      <Route path="/about">
+      <Route path='/about'>
         <About />
       </Route>
-      <Route path="/">
+      <Route path='/'>
         <Home />
       </Route>
     </Switch>
