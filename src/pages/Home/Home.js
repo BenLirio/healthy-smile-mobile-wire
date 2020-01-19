@@ -7,6 +7,7 @@ import AboutImageList from '../../components/AboutImageList/AboutImageList'
 import Cta from '../../components/Cta/Cta'
 import RateABiz from '../../components/RateABiz/RateABiz'
 import Associations from '../../components/Associations/Associations'
+import About from '../../components/About/About'
 
 const Blank = () => (
   <div
@@ -61,12 +62,12 @@ export const Home = () => (
           <Associations />
         </Col>
         <Col xs={4}>
-          <RateABiz />
+          <Blank4 />
         </Col>
       </Row>
       <Row>
         <Col xs={4}>
-          <Blank4 />
+          <About />
         </Col>
         <Col xs={8}>
           <AboutImageList />
