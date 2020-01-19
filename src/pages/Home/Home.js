@@ -3,6 +3,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import FeatureImage from '../../components/FeatureImage/FeatureImage'
 import Feature from '../../components/Feature/Feature'
+import AboutImageList from '../../components/AboutImageList/AboutImageList'
 
 const Blank = () => (
   <div
@@ -57,12 +58,12 @@ export const Home = () => (
           <Blank3 />
         </Col>
       </Row>
-      <Row noGutters>
+      <Row>
         <Col xs={4}>
           <Blank4 />
         </Col>
         <Col xs={8}>
-          <Blank4 />
+          <AboutImageList />
         </Col>
       </Row>
       <Row>

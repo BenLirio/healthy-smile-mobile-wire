@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+.Grid {
+  display: grid;
+  height: 500px;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  grid-template-areas:
+    'image1 image3'
+    'image2 image3';
+}
+.Image1 {
+  background: $info;
+  grid-area: image1;
+}
+.Image2 {
+  background: $info;
+  grid-area: image2;
+}
+.Image3 {
+  background: $info;
+  grid-area: image3;
+}
