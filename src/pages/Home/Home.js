@@ -5,6 +5,7 @@ import FeatureImage from '../../components/FeatureImage/FeatureImage'
 import Feature from '../../components/Feature/Feature'
 import AboutImageList from '../../components/AboutImageList/AboutImageList'
 import Cta from '../../components/Cta/Cta'
+import RateABiz from '../../components/RateABiz/RateABiz'
 
 const Blank = () => (
   <div
@@ -56,7 +57,7 @@ export const Home = () => (
       </Row>
       <Row>
         <Col>
-          <Blank3 />
+          <RateABiz />
         </Col>
       </Row>
       <Row>
