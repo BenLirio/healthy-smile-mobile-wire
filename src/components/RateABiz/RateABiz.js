@@ -16,17 +16,31 @@ const params = [
 export const RateABiz = () => {
   const [ratings, setRatings] = useState([])
   useEffect(() => {
-    setFetching(true)
-    console.log('loaded...')
     fetch(
       'https://s3.amazonaws.com/cdn.rateabiz.com/reviews/ce34016f3fd1daf75a0daca4eb322873/reviews.json'
     )
       .then(res => res.json())
-      .then(res => {
-        console.log('res', res)
-        setStats(res.stats)
-        setReviews(res.reviews)
-        setFetching(false)
+      .then(pojo => {
+        const reviews = pojo.reviews.map(
+          ({
+            authorLastName = '',
+            authorFirstName = '',
+            rating,
+            id,
+            text = '',
+            title = '',
+          }) => {
+            console.log('author', `${authorFirstName} ${authorLastName}`)
+            return {
+              id,
+              name: `${authorFirstName} ${authorLastName}`,
+              title,
+              text,
+              rating: Number.parseInt(rating),
+            }
+          }
+        )
+        setRatings(reviews)
       })
       .catch(console.error)
   }, [])
