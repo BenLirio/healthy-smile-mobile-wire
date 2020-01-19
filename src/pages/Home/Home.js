@@ -58,11 +58,8 @@ export const Home = () => (
         </Col>
       </Row>
       <Row>
-        <Col xs={8}>
+        <Col>
           <Associations />
-        </Col>
-        <Col xs={4}>
-          <Blank4 />
         </Col>
       </Row>
       <Row>

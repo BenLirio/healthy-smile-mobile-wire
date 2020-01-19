@@ -1,16 +1,20 @@
 $mda: url('/mda-words.png');
-$ada: url('/ada-words.png');
+$ada: url('/ada.png');
 .Grid {
   display: grid;
+  grid-template-columns: 2fr 3fr;
+  place-items: stretch;
   height: 400px;
 }
 .Ada {
   background: $ada;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: 50%;
 }
 .Mda {
   background: $mda;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: 60%;
 }
