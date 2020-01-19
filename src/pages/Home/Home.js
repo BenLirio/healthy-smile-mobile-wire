@@ -1,9 +1,8 @@
 import React from 'react'
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import { Container, Row, Col } from 'react-bootstrap'
 import FeatureImage from '../../components/FeatureImage/FeatureImage'
+import Feature from '../../components/Feature/Feature'
 
 const Blank = () => (
   <div
@@ -39,45 +38,43 @@ const Blank4 = () => (
 )
 
 export const Home = () => (
-  <Container>
-    <Row>
-      <Col>
-        <FeatureImage />
-      </Col>
-    </Row>
-    <Row noGutters>
-      <Col>
-        <Blank2 />
-      </Col>
-      <Col>
-        <Blank2 />
-      </Col>
-      <Col>
-        <Blank2 />
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <Blank3 />
-      </Col>
-    </Row>
-    <Row noGutters>
-      <Col xs={4}>
-        <Blank4 />
-      </Col>
-      <Col xs={8}>
-        <Blank4 />
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <Blank2 />
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <Blank4 />
-      </Col>
-    </Row>
-  </Container>
+  <>
+    <FeatureImage />
+    <Container>
+      <Row className='justify-content-md-center'>
+        <Col xs={4}>
+          <Feature />
+        </Col>
+        <Col xs={4}>
+          <Feature />
+        </Col>
+        <Col xs={4}>
+          <Feature />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Blank3 />
+        </Col>
+      </Row>
+      <Row noGutters>
+        <Col xs={4}>
+          <Blank4 />
+        </Col>
+        <Col xs={8}>
+          <Blank4 />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Blank2 />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Blank4 />
+        </Col>
+      </Row>
+    </Container>
+  </>
 )
