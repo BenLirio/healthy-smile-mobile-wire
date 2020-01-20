@@ -10,12 +10,14 @@
     'image2 image3';
 }
 .Image1 {
-  background: url('/smile.jpg');
+  // background: url('/smile.jpg');
+  background: $info;
   background-size: cover;
   grid-area: image1;
 }
 .Image2 {
-  background: url('/working.jpg');
+  // background: url('/working.jpg');
+  background: $info;
   background-size: cover;
   grid-area: image2;
 }
