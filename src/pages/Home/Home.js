@@ -8,6 +8,7 @@ import Cta from '../../components/Cta/Cta'
 import RateABiz from '../../components/RateABiz/RateABiz'
 import Associations from '../../components/Associations/Associations'
 import About from '../../components/About/About'
+import Maps from '../../components/Maps/Maps'
 
 const Blank = () => (
   <div
@@ -77,7 +78,7 @@ export const Home = () => (
       </Row>
       <Row>
         <Col>
-          <Blank4 />
+          <Maps />
         </Col>
       </Row>
     </Container>
