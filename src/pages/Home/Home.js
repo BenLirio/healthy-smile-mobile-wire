@@ -49,13 +49,13 @@ export const Home = () => (
     <Container>
       <Row className='justify-content-md-center'>
         <Col xs={4}>
-          <Feature />
+          <Feature icon='FaClock' />
         </Col>
         <Col xs={4}>
-          <Feature />
+          <Feature icon='FaHeart' />
         </Col>
         <Col xs={4}>
-          <Feature />
+          <Feature icon='FaTooth' />
         </Col>
       </Row>
       <Row>
