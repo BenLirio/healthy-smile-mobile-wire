@@ -15,14 +15,14 @@ export const SimpleMap = () => {
 
   return (
     <div className={classes.Maps}>
-      <GoogleMapReact
+      {/* <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyA2A1xc8sr0OQpnDuwyj0kv4LCSw7jMMlA' }}
         defaultCenter={location.center}
         defaultZoom={location.zoom}>
         <div className={classes.Marker} lat={42.884136} lng={-85.615897}>
           <FaTooth size='3rem' />
         </div>
-      </GoogleMapReact>
+      </GoogleMapReact> */}
     </div>
   )
 }

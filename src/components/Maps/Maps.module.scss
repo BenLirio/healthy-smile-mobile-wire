@@ -2,6 +2,8 @@
 .Maps {
   height: 400px;
   margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  background: $info;
   & > div > div > div > div > div > div {
     box-shadow: inset 0 0 4px $dark;
     border-radius: 0.25rem;
