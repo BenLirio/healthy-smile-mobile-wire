@@ -1,9 +1,11 @@
 @import '../../variables.scss';
+.StarContainer {
+}
 .Star {
+  color: $warning;
   display: inline;
 }
 .Rating {
-  background: $light;
   padding: 2rem;
-  border-bottom: 2px solid $dark;
+  min-width: 400px;
 }

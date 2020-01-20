@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 export default function TopNav({ onClick }) {
-  console.log('onClick', onClick)
   return (
     <div className={classes.TopNav}>
       <button className={classes.Button} onClick={onClick}>

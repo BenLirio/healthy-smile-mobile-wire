@@ -48,13 +48,13 @@ export const Home = () => (
     <FeatureImage />
     <Container>
       <Row className='justify-content-md-center'>
-        <Col xs={4}>
+        <Col sm={4}>
           <Feature icon='FaClock' />
         </Col>
-        <Col xs={4}>
+        <Col sm={4}>
           <Feature icon='FaHeart' />
         </Col>
-        <Col xs={4}>
+        <Col sm={4}>
           <Feature icon='FaTooth' />
         </Col>
       </Row>
@@ -64,10 +64,15 @@ export const Home = () => (
         </Col>
       </Row>
       <Row>
-        <Col xs={4}>
+        <Col>
+          <RateABiz />
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={4}>
           <About />
         </Col>
-        <Col xs={8}>
+        <Col sm={8}>
           <AboutImageList />
         </Col>
       </Row>
