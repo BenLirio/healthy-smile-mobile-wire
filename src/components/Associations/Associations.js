@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import classes from './Associations.module.scss'
 
 export const Associations = () => (

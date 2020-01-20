@@ -17,7 +17,6 @@ const setIcon = icon => {
   }
 }
 const getText = icon => {
-  const size = '8rem'
   switch (icon) {
     case 'FaClock':
       return <h1>Schedule</h1>

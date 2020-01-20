@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import classes from './AboutImageList.module.scss'
-import RateABiz from '../RateABiz/RateABiz'
 
 export const AboutImageList = () => (
   <div className={classes.Grid}>

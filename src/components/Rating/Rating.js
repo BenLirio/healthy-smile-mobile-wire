@@ -42,7 +42,7 @@ export const Rating = ({ title, text, name, rating, createdDate }) => (
       {yearsSince(createdDate)}
     </div>
     <h5>{title}</h5>
-    <p className={classes.RatingText}>"{text}"</p>
+    <p className={classes.RatingText}>&quot;{text}&quot;</p>
   </div>
 )
 

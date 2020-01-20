@@ -10,39 +10,6 @@ import Associations from '../../components/Associations/Associations'
 import About from '../../components/About/About'
 import Maps from '../../components/Maps/Maps'
 
-const Blank = () => (
-  <div
-    style={{
-      height: '100px',
-      border: '2px solid #000',
-      background: '#292',
-    }}></div>
-)
-const Blank2 = () => (
-  <div
-    style={{
-      height: '200px',
-      border: '2px solid #000',
-      background: '#292',
-    }}></div>
-)
-const Blank3 = () => (
-  <div
-    style={{
-      height: '300px',
-      border: '2px solid #000',
-      background: '#292',
-    }}></div>
-)
-const Blank4 = () => (
-  <div
-    style={{
-      height: '400px',
-      border: '2px solid #000',
-      background: '#292',
-    }}></div>
-)
-
 export const Home = () => (
   <>
     <FeatureImage />
