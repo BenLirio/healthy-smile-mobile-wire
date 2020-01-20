@@ -1,23 +1,69 @@
-import React from 'react'
-import classes from './TopNav.module.scss'
-import { Link } from 'react-router-dom'
-import PropTypes from 'prop-types'
+import React, { useState, useEffect } from 'react'
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from '@material-ui/core'
 
-export default function TopNav({ onClick }) {
+import NavButton from './NavButton/NavButton'
+import classes from './TopNav.module.scss'
+import MenuIcon from '@material-ui/icons/Menu'
+import { BrowserRouter, withRouter } from 'react-router-dom'
+import { MailIcon } from '@material-ui/icons/Mail'
+
+const TopNav = props => {
+  const [drawerOpen, setDrawerOpen] = useState(false)
+  const [pName, setPName] = useState('/a')
+  const toggleDrawer = state => {
+    setDrawerOpen(state)
+  }
+  const {
+    location: { pathname },
+  } = props
+
+  const onUpdate = name => {
+    console.log('pName', name)
+    setPName(pathname)
+  }
+
   return (
-    <div className={classes.TopNav}>
-      <button className={classes.Button} onClick={onClick}>
-        Drawer
-      </button>
-      <Link className={classes.Link} to='/'>
-        Home
-      </Link>
-      <Link className={classes.Link} to='/about'>
-        About
-      </Link>
-    </div>
+    <>
+      <AppBar position='fixed'>
+        <Toolbar className={classes.Toolbar}>
+          <div className={classes.MenuButton}>
+            <IconButton
+              onClick={() => toggleDrawer(true)}
+              edge='start'
+              color='inherit'
+              aria-label='menu'>
+              <MenuIcon />
+            </IconButton>
+          </div>
+          <div className={classes.CollapsibleMenu}>
+            <NavButton link='home' clicked={onUpdate} pathName={pName} />
+            <NavButton link='newPatient' clicked={onUpdate} pathName={pName} />
+            <NavButton link='services' pathName={pName} />
+            <NavButton link='testimonials' pathName={pName} />
+            <NavButton link='about' pathName={pName} />
+          </div>
+        </Toolbar>
+      </AppBar>
+      <Toolbar />
+      <Drawer open={drawerOpen} onClose={() => toggleDrawer(false)}>
+        <List component='nav'>
+          <ListItem button>
+            <ListItemIcon>
+              <MenuIcon />
+            </ListItemIcon>
+          </ListItem>
+        </List>
+      </Drawer>
+    </>
   )
 }
-TopNav.propTypes = {
-  onClick: PropTypes.func.isRequired,
-}
+export default withRouter(TopNav)

@@ -1,2 +1,5 @@
 export { Home } from './Home/Home'
 export { About } from './About/About'
+export { Testimonials } from './Testimonials/Testimonials'
+export { Services } from './Services/Services'
+export { NewPatient } from './NewPatient/NewPatient'
