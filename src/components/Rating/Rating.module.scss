@@ -1,11 +1,22 @@
 @import '../../variables.scss';
 .StarContainer {
+  p {
+    display: inline;
+  }
+  p:last-child {
+    margin-left: 0.5rem;
+    color: $secondary;
+  }
 }
 .Star {
   color: $warning;
-  display: inline;
 }
 .Rating {
   padding: 2rem;
-  min-width: 400px;
+}
+.RatingText {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  font-style: italic;
 }

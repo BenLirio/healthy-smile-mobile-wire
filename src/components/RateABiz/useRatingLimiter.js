@@ -29,6 +29,7 @@ const mapRatings = pojo => {
 export default function useRatingLimiter() {
   const [ratings, setRatings] = useState([])
   const [index, setIndex] = useState(0)
+  const [stats, setStats] = useState({})
   const nextRatings = () => {
     setIndex(currentIndex => {
       return currentIndex + 1
@@ -49,11 +50,13 @@ export default function useRatingLimiter() {
   // }, [])
   useEffect(() => {
     setRatings(mapRatings(data))
+    setStats(data.stats)
   }, [])
   return {
-    // ratings: ratings.slice(index, index + 6),
-    ratings,
+    ratings: ratings.slice(index, index + 3),
+    // ratings,
     nextRatings,
     prevRatings,
+    stats,
   }
 }

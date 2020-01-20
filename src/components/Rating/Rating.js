@@ -32,17 +32,17 @@ const yearsSince = createdDate => {
 
 export const Rating = ({ title, text, name, rating, createdDate }) => (
   <div className={classes.Rating}>
-    <h2>{name}</h2>
+    <h3>{name}</h3>
     <div className={classes.StarContainer}>
-      <h5 className={classes.Star}>{rating >= 1 ? '★' : '☆'}</h5>
-      <h5 className={classes.Star}>{rating >= 2 ? '★' : '☆'}</h5>
-      <h5 className={classes.Star}>{rating >= 3 ? '★' : '☆'}</h5>
-      <h5 className={classes.Star}>{rating >= 4 ? '★' : '☆'}</h5>
-      <h5 className={classes.Star}>{rating >= 5 ? '★' : '☆'}</h5>
-      <h2>{yearsSince(createdDate)}</h2>
+      <p className={classes.Star}>{rating >= 1 ? '★' : '☆'}</p>
+      <p className={classes.Star}>{rating >= 2 ? '★' : '☆'}</p>
+      <p className={classes.Star}>{rating >= 3 ? '★' : '☆'}</p>
+      <p className={classes.Star}>{rating >= 4 ? '★' : '☆'}</p>
+      <p className={classes.Star}>{rating >= 5 ? '★' : '☆'}</p>
+      {yearsSince(createdDate)}
     </div>
-    <h3>{title}</h3>
-    <p>{text}</p>
+    <h5>{title}</h5>
+    <p className={classes.RatingText}>"{text}"</p>
   </div>
 )
 
