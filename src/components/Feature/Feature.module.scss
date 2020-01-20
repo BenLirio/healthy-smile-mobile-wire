@@ -5,4 +5,20 @@
   height: 300px;
   margin-bottom: 2rem;
   box-shadow: 0 0 2px 0 $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  &:hover {
+    box-shadow: 0 0 6px 0 $dark;
+    cursor: pointer;
+    .Arrow {
+      color: $dark;
+    }
+  }
+}
+.Arrow {
+  color: $secondary;
+}
+.Icon {
 }
