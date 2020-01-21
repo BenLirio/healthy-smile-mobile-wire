@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom'
 import './index.scss'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
+import { BrowserRouter } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
 const Root = () => (
-  <CssBaseline>
-    <App />
-  </CssBaseline>
+  <BrowserRouter>
+    <CssBaseline>
+      <App />
+    </CssBaseline>
+  </BrowserRouter>
 )
 
 ReactDOM.render(<Root />, document.getElementById('root'))
